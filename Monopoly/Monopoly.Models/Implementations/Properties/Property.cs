@@ -1,4 +1,5 @@
-﻿using Monopoly.Models.Contracts.Properties;
+﻿using Monopoly.Models.Contracts.Players;
+using Monopoly.Models.Contracts.Properties;
 
 namespace Monopoly.Models.Implementations.Properties
 {
@@ -7,7 +8,7 @@ namespace Monopoly.Models.Implementations.Properties
         private string name;
         private int price;
         private int mortgageValue;
-        private IPlayer owner;
+        private IParticipant owner;
         private bool isMortgaged;
 
         protected Property(string name, int price, int mortgageValue)
@@ -38,12 +39,11 @@ namespace Monopoly.Models.Implementations.Properties
             set { this.mortgageValue = value; }
         }
 
-        public IPlayer Owner
+        public IParticipant Owner
         {
             get { return this.owner; }
             set { this.owner = value; }
         }
-
 
         public bool IsMortgaged
         {

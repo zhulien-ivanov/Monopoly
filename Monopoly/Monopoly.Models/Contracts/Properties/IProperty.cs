@@ -1,4 +1,6 @@
-﻿namespace Monopoly.Models.Contracts.Properties
+﻿using Monopoly.Models.Contracts.Players;
+
+namespace Monopoly.Models.Contracts.Properties
 {
     public interface IProperty
     {
@@ -8,7 +10,7 @@
 
         int MortgageValue { get; set; }
 
-        IPlayer Owner { get; set; }
+        IParticipant Owner { get; set; }
 
         bool IsMortgaged { get; set; }
     }
