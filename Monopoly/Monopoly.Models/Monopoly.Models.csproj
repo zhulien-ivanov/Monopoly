@@ -41,16 +41,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\Properties\IProperty.cs" />
-    <Compile Include="Contracts\Properties\IPropertyColourGroup.cs" />
+    <Compile Include="Contracts\Properties\IStreetGroup.cs" />
     <Compile Include="Contracts\Properties\IRailwayStationProperty.cs" />
     <Compile Include="Contracts\Properties\IRentProperty.cs" />
     <Compile Include="Contracts\Properties\IStreetProperty.cs" />
     <Compile Include="Contracts\Properties\IUtilityProperty.cs" />
     <Compile Include="Enumerations\StreetColour.cs" />
+    <Compile Include="Implementations\Properties\Property.cs" />
+    <Compile Include="Implementations\Properties\StreetProperty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Implementations\" />
+    <Folder Include="Contracts\Players\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

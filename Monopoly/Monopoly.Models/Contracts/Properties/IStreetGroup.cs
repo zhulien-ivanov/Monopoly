@@ -2,7 +2,7 @@
 
 namespace Monopoly.Models.Contracts.Properties
 {
-    public interface IPropertyColourGroup
+    public interface IStreetGroup
     {
         StreetColour StreetColour { get; set; }
 
