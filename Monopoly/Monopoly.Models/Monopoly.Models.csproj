@@ -47,7 +47,9 @@
     <Compile Include="Contracts\Properties\IStreetProperty.cs" />
     <Compile Include="Contracts\Properties\IUtilityProperty.cs" />
     <Compile Include="Enumerations\StreetColour.cs" />
+    <Compile Include="Implementations\Properties\RentProperty.cs" />
     <Compile Include="Implementations\Properties\Property.cs" />
+    <Compile Include="Implementations\Properties\RailwayStationProperty.cs" />
     <Compile Include="Implementations\Properties\StreetProperty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

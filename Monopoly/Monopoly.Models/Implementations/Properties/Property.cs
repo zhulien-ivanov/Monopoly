@@ -50,7 +50,5 @@ namespace Monopoly.Models.Implementations.Properties
             get { return this.isMortgaged; }
             set { this.isMortgaged = value; }
         }
-
-        public abstract int GetRentValue();
     }
 }

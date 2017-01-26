@@ -1,11 +1,9 @@
-﻿using System;
-using Monopoly.Models.Contracts.Properties;
+﻿using Monopoly.Models.Contracts.Properties;
 
 namespace Monopoly.Models.Implementations.Properties
 {
-    public class StreetProperty : Property, IStreetProperty
+    public class StreetProperty : RentProperty, IStreetProperty
     {
-        private int rentPrice;
         private IStreetGroup streetGroup;
         private int oneHouseRentValue;
         private int twoHousesRentValue;
@@ -15,9 +13,8 @@ namespace Monopoly.Models.Implementations.Properties
         private int houses;
         private int hotels;
 
-        public StreetProperty(string name, int price, int mortgageValue, int rentPrice, IStreetGroup streetGroup, int oneHouseRentValue, int twoHousesRentValue, int threeHousesRentValue, int fourHousesRentValue, int hotelRentValue) : base(name, price, mortgageValue)
+        public StreetProperty(string name, int price, int mortgageValue, int rentPrice, IStreetGroup streetGroup, int oneHouseRentValue, int twoHousesRentValue, int threeHousesRentValue, int fourHousesRentValue, int hotelRentValue) : base(name, price, mortgageValue, rentPrice)
         {
-            this.RentPrice = rentPrice;
             this.StreetGroup = streetGroup;
             this.OneHouseRentValue = oneHouseRentValue;
             this.TwoHousesRentValue = twoHousesRentValue;
@@ -27,12 +24,6 @@ namespace Monopoly.Models.Implementations.Properties
 
             this.Houses = 0;
             this.Hotels = 0;
-        }
-
-        public int RentPrice
-        {
-            get { return this.rentPrice; }
-            set { this.rentPrice = value; }
         }
 
         public IStreetGroup StreetGroup
@@ -81,16 +72,6 @@ namespace Monopoly.Models.Implementations.Properties
         {
             get { return this.hotels; }
             set { this.hotels = value; }
-        }
-
-        public override int GetRentValue()
-        {
-            // If owner have all the properties of the street group
-            // - If owner have any houses/hotel
-            // - Else - Rent x2
-            // Else - RentValue
-
-            throw new NotImplementedException();
         }
     }
 }

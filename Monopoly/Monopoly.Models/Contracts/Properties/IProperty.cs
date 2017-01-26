@@ -11,7 +11,5 @@
         IPlayer Owner { get; set; }
 
         bool IsMortgaged { get; set; }
-
-        int GetRentValue();
     }
 }
