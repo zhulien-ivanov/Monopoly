@@ -40,6 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\Players\IBank.cs" />
+    <Compile Include="Contracts\Players\IParticipant.cs" />
+    <Compile Include="Contracts\Players\IPlayer.cs" />
     <Compile Include="Contracts\Properties\IProperty.cs" />
     <Compile Include="Contracts\Properties\IStreetGroup.cs" />
     <Compile Include="Contracts\Properties\IRailwayStationProperty.cs" />
@@ -48,15 +51,16 @@
     <Compile Include="Contracts\Properties\IUtilityProperty.cs" />
     <Compile Include="Enumerations\PlayerColour.cs" />
     <Compile Include="Enumerations\StreetColour.cs" />
+    <Compile Include="Implementations\Players\Bank.cs" />
+    <Compile Include="Implementations\Players\Participant.cs" />
+    <Compile Include="Implementations\Players\Player.cs" />
     <Compile Include="Implementations\Properties\RentProperty.cs" />
     <Compile Include="Implementations\Properties\Property.cs" />
     <Compile Include="Implementations\Properties\RailwayStationProperty.cs" />
     <Compile Include="Implementations\Properties\StreetProperty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Contracts\Players\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
