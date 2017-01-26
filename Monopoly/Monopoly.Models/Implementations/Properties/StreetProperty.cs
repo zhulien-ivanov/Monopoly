@@ -85,6 +85,11 @@ namespace Monopoly.Models.Implementations.Properties
 
         public override int GetRentValue()
         {
+            // If owner have all the properties of the street group
+            // - If owner have any houses/hotel
+            // - Else - Rent x2
+            // Else - RentValue
+
             throw new NotImplementedException();
         }
     }
