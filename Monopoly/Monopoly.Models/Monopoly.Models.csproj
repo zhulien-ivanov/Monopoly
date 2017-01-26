@@ -46,6 +46,7 @@
     <Compile Include="Contracts\Properties\IRentProperty.cs" />
     <Compile Include="Contracts\Properties\IStreetProperty.cs" />
     <Compile Include="Contracts\Properties\IUtilityProperty.cs" />
+    <Compile Include="Enumerations\PlayerColour.cs" />
     <Compile Include="Enumerations\StreetColour.cs" />
     <Compile Include="Implementations\Properties\RentProperty.cs" />
     <Compile Include="Implementations\Properties\Property.cs" />
