@@ -4,8 +4,6 @@ namespace Monopoly.Models.Contracts.Properties
 {
     public interface IProperty : IMapObject
     {
-        string Name { get; set; }
-
         int Price { get; set; }
 
         int MortgageValue { get; set; }

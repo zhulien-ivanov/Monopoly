@@ -5,7 +5,7 @@ namespace Monopoly.Models.Implementations.Properties
 {
     public class SpecialObject : MapObject, ISpecialObject
     {
-        public SpecialObject(MapObjectType objectType) : base(objectType)
+        public SpecialObject(string name, MapObjectType objectType) : base(name, objectType)
         {
         }
     }

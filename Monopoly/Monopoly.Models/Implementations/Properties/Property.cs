@@ -6,26 +6,17 @@ namespace Monopoly.Models.Implementations.Properties
 {
     public abstract class Property : MapObject, IProperty
     {
-        private string name;
         private int price;
         private int mortgageValue;
         private IParticipant owner;
         private bool isMortgaged;
 
-        protected Property(string name, int price, int mortgageValue, MapObjectType objectType) : base(objectType)
+        protected Property(string name, int price, int mortgageValue, IParticipant owner, MapObjectType objectType) : base(name, objectType)
         {
-            this.Name = name;
             this.Price = price;
             this.MortgageValue = mortgageValue;
-
-            //this.owner = Bank;
+            this.Owner = owner;
             this.IsMortgaged = false;
-        }
-
-        public string Name
-        {
-            get { return this.name; }
-            set { this.name = value; }
         }
 
         public int Price
