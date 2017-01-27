@@ -1,9 +1,10 @@
 ﻿using Monopoly.Models.Contracts.Players;
 using Monopoly.Models.Contracts.Properties;
+using Monopoly.Models.Enumerations;
 
 namespace Monopoly.Models.Implementations.Properties
 {
-    public abstract class Property : IProperty
+    public abstract class Property : MapObject, IProperty
     {
         private string name;
         private int price;
@@ -11,7 +12,7 @@ namespace Monopoly.Models.Implementations.Properties
         private IParticipant owner;
         private bool isMortgaged;
 
-        protected Property(string name, int price, int mortgageValue)
+        protected Property(string name, int price, int mortgageValue, MapObjectType objectType) : base(objectType)
         {
             this.Name = name;
             this.Price = price;

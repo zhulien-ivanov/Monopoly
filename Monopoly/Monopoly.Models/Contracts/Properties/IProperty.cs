@@ -2,7 +2,7 @@
 
 namespace Monopoly.Models.Contracts.Properties
 {
-    public interface IProperty
+    public interface IProperty : IMapObject
     {
         string Name { get; set; }
 

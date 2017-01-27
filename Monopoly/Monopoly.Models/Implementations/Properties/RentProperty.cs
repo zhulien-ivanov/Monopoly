@@ -1,4 +1,5 @@
 ﻿using Monopoly.Models.Contracts.Properties;
+using Monopoly.Models.Enumerations;
 
 namespace Monopoly.Models.Implementations.Properties
 {
@@ -6,7 +7,7 @@ namespace Monopoly.Models.Implementations.Properties
     {
         private int rentPrice;
 
-        public RentProperty(string name, int price, int mortgageValue, int rentPrice) : base(name, price, mortgageValue)
+        public RentProperty(string name, int price, int mortgageValue, int rentPrice, MapObjectType objectType) : base(name, price, mortgageValue, objectType)
         {
             this.RentPrice = rentPrice;
         }
