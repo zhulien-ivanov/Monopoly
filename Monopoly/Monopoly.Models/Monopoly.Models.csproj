@@ -67,6 +67,7 @@
     <Compile Include="Implementations\Properties\Property.cs" />
     <Compile Include="Implementations\Properties\RailwayStationProperty.cs" />
     <Compile Include="Implementations\Properties\SpecialObject.cs" />
+    <Compile Include="Implementations\Properties\StreetGroup.cs" />
     <Compile Include="Implementations\Properties\StreetProperty.cs" />
     <Compile Include="Implementations\Properties\UtilityProperty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
