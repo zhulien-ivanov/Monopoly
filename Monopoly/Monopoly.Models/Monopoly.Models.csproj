@@ -52,9 +52,11 @@
     <Compile Include="Contracts\Properties\IRentProperty.cs" />
     <Compile Include="Contracts\Properties\IStreetProperty.cs" />
     <Compile Include="Contracts\Properties\IUtilityProperty.cs" />
+    <Compile Include="Enumerations\CardType.cs" />
     <Compile Include="Enumerations\MapObjectType.cs" />
     <Compile Include="Enumerations\PlayerColour.cs" />
     <Compile Include="Enumerations\StreetColour.cs" />
+    <Compile Include="Implementations\Cards\Card.cs" />
     <Compile Include="Implementations\Players\Bank.cs" />
     <Compile Include="Implementations\Players\Participant.cs" />
     <Compile Include="Implementations\Players\Player.cs" />
