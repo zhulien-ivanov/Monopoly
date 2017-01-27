@@ -7,14 +7,12 @@ namespace Monopoly.Models.Implementations.Properties
     public abstract class Property : MapObject, IProperty
     {
         private int price;
-        private int mortgageValue;
         private IParticipant owner;
         private bool isMortgaged;
 
-        protected Property(string name, int price, int mortgageValue, IParticipant owner, MapObjectType objectType) : base(name, objectType)
+        protected Property(string name, int price, IParticipant owner, MapObjectType objectType) : base(name, objectType)
         {
             this.Price = price;
-            this.MortgageValue = mortgageValue;
             this.Owner = owner;
             this.IsMortgaged = false;
         }
@@ -23,12 +21,6 @@ namespace Monopoly.Models.Implementations.Properties
         {
             get { return this.price; }
             set { this.price = value; }
-        }
-
-        public int MortgageValue
-        {
-            get { return this.mortgageValue; }
-            set { this.mortgageValue = value; }
         }
 
         public IParticipant Owner

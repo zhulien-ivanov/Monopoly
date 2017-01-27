@@ -9,15 +9,17 @@ namespace Monopoly.Models.Implementations.Contexts
         private int availableHotels;
         private int availableTurnsInJail;
         private int jailReleaseTax;
+        private int mortgagePercent;
         private int mortgageLiftTaxPercent;
 
-        public GameSettings(int playerStartMoney = 1500, int availableHouses = 40, int availableHotels = 10, int availableTurnsInJail = 3, int jailReleaseTax = 50, int mortgageLiftTaxPercent = 10)
+        public GameSettings(int playerStartMoney = 1500, int availableHouses = 40, int availableHotels = 10, int availableTurnsInJail = 3, int jailReleaseTax = 50, int mortgagePercent = 50, int mortgageLiftTaxPercent = 10)
         {
             this.PlayerStartMoney = playerStartMoney;
             this.AvailableHouses = availableHouses;
             this.AvailableHotels = availableHotels;
             this.AvailableTurnsInJail = availableTurnsInJail;
             this.JailReleaseTax = jailReleaseTax;
+            this.MortgagePercent = mortgagePercent;
             this.MortgageLiftTaxPercent = mortgageLiftTaxPercent;
         }
 
@@ -49,6 +51,12 @@ namespace Monopoly.Models.Implementations.Contexts
         {
             get { return this.jailReleaseTax; }
             private set { this.jailReleaseTax = value; }
+        }
+
+        public int MortgagePercent
+        {
+            get { return this.mortgagePercent; }
+            private set { this.mortgagePercent = value; }
         }
 
         public int MortgageLiftTaxPercent

@@ -15,7 +15,7 @@ namespace Monopoly.Models.Implementations.Properties
         private int houses;
         private int hotels;
 
-        public StreetProperty(string name, int price, int mortgageValue, IParticipant owner, int rentPrice, IStreetGroup streetGroup, int oneHouseRentValue, int twoHousesRentValue, int threeHousesRentValue, int fourHousesRentValue, int hotelRentValue) : base(name, price, mortgageValue, owner, rentPrice, MapObjectType.StreetProperty)
+        public StreetProperty(string name, int price, IParticipant owner, int rentPrice, IStreetGroup streetGroup, int oneHouseRentValue, int twoHousesRentValue, int threeHousesRentValue, int fourHousesRentValue, int hotelRentValue) : base(name, price, owner, rentPrice, MapObjectType.StreetProperty)
         {
             this.StreetGroup = streetGroup;
             this.OneHouseRentValue = oneHouseRentValue;

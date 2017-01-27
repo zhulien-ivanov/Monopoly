@@ -6,7 +6,7 @@ namespace Monopoly.Models.Implementations.Properties
 {
     public class UtilityProperty : Property, IUtilityProperty
     {
-        public UtilityProperty(string name, int price, int mortgageValue, IParticipant owner) : base(name, price, mortgageValue, owner, MapObjectType.UtilityProperty)
+        public UtilityProperty(string name, int price, IParticipant owner) : base(name, price, owner, MapObjectType.UtilityProperty)
         {
         }
     }

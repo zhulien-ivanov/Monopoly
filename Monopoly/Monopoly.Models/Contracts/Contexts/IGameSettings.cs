@@ -12,6 +12,8 @@
 
         int JailReleaseTax { get; }
 
+        int MortgagePercent { get; }
+
         int MortgageLiftTaxPercent { get; }
     }
 }

@@ -8,7 +8,7 @@ namespace Monopoly.Models.Implementations.Properties
     {
         private int rentPrice;
 
-        public RentProperty(string name, int price, int mortgageValue, IParticipant owner, int rentPrice, MapObjectType objectType) : base(name, price, mortgageValue, owner, objectType)
+        public RentProperty(string name, int price, IParticipant owner, int rentPrice, MapObjectType objectType) : base(name, price, owner, objectType)
         {
             this.RentPrice = rentPrice;
         }
