@@ -4,6 +4,8 @@
     {
         int PlayerStartMoney { get; }
 
+        int PassGOAward { get; }
+
         int AvailableHouses { get; }
 
         int AvailableHotels { get; }

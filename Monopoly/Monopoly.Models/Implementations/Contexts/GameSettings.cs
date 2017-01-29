@@ -5,6 +5,7 @@ namespace Monopoly.Models.Implementations.Contexts
     public class GameSettings : IGameSettings
     {
         private int playerStartMoney;
+        private int passGOAward;
         private int availableHouses;
         private int availableHotels;
         private int availableTurnsInJail;
@@ -12,9 +13,10 @@ namespace Monopoly.Models.Implementations.Contexts
         private int mortgagePercent;
         private int mortgageLiftTaxPercent;
 
-        public GameSettings(int playerStartMoney = 1500, int availableHouses = 40, int availableHotels = 10, int availableTurnsInJail = 3, int jailReleaseTax = 50, int mortgagePercent = 50, int mortgageLiftTaxPercent = 10)
+        public GameSettings(int playerStartMoney = 1500, int passGOAward = 200, int availableHouses = 40, int availableHotels = 10, int availableTurnsInJail = 3, int jailReleaseTax = 50, int mortgagePercent = 50, int mortgageLiftTaxPercent = 10)
         {
             this.PlayerStartMoney = playerStartMoney;
+            this.PassGOAward = passGOAward;
             this.AvailableHouses = availableHouses;
             this.AvailableHotels = availableHotels;
             this.AvailableTurnsInJail = availableTurnsInJail;
@@ -27,6 +29,12 @@ namespace Monopoly.Models.Implementations.Contexts
         {
             get { return this.playerStartMoney; }
             private set { this.playerStartMoney = value; }
+        }
+
+        public int PassGOAward
+        {
+            get { return this.passGOAward; }
+            private set { this.passGOAward = value; }
         }
 
         public int AvailableHouses
