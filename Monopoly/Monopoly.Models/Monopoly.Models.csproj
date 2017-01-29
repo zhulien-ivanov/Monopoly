@@ -58,8 +58,10 @@
     <Compile Include="Enumerations\CardType.cs" />
     <Compile Include="Enumerations\MapObjectType.cs" />
     <Compile Include="Enumerations\PlayerColour.cs" />
+    <Compile Include="Enumerations\PlayerStatus.cs" />
     <Compile Include="Enumerations\StreetColour.cs" />
     <Compile Include="Helpers\CardEffectResult.cs" />
+    <Compile Include="Helpers\PlayerStatusInformation.cs" />
     <Compile Include="Implementations\Cards\Card.cs" />
     <Compile Include="Implementations\Contexts\GameContext.cs" />
     <Compile Include="Implementations\Contexts\GameSettings.cs" />
