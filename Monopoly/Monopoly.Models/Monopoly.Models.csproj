@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\Cards\ICard.cs" />
+    <Compile Include="Contracts\Contexts\IGameContext.cs" />
     <Compile Include="Contracts\Contexts\IGameSettings.cs" />
     <Compile Include="Contracts\Players\IBank.cs" />
     <Compile Include="Contracts\Players\IParticipant.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="Enumerations\PlayerColour.cs" />
     <Compile Include="Enumerations\StreetColour.cs" />
     <Compile Include="Implementations\Cards\Card.cs" />
+    <Compile Include="Implementations\Contexts\GameContext.cs" />
     <Compile Include="Implementations\Contexts\GameSettings.cs" />
     <Compile Include="Implementations\Players\Bank.cs" />
     <Compile Include="Implementations\Players\Participant.cs" />
